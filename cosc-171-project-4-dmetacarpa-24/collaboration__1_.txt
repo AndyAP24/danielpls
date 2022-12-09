@@ -1,0 +1,14 @@
+[This is a template for your project collaboration document.  Please briefly answer the following questions in whatever format you'd lik. Try to stay within 500 words unless there is an issue/bug requiring additional explanation.]
+
+(1) Who did you collaborate with or recieve help/insight from during this project, and how did they help?
+I went to both TA sessions this week and also Professor Pentecost's office hours on Wednesday.  I learned about many things, such as different ways to store the data correctly in the backing store and how to implement the clock algorithm.  I was a bit behind my peers for this project so I do not think that I provided any insight to anyone.
+
+(2) What went well for you in this project?
+I feel like I do have a better understanding of the interactions between the backing store and our vmsim.  I like how we learned about the clock algorithm; it seems like a very efficient way to choose a page to swap out, since we are keeping track of how recently the page has been referenced (i.e. within the last clock cycle).
+
+(3) What was challenging for you in this project?
+To be completely honest, even though I understand the concepts that we are employing during this project, I have found trouble with determining whether my swap in and swap out methods actually contribute to this.  Whenever running random-hop or iterative-walk, the program usually runs out of memory entirely far before either of my methods are called (I have never seen swap in be called).  I tried writing a tester method that just calls swap out and swap in manually, but cannot seem to get the method to work, likely because the reverse page map is not declared in these cases.  I feel like I am struggling a fair amount to do these certain things, and thus I will likely schedule a 1 on 1 office hours appointment for next week.
+
+(4) Did you consult any online sources in developing the code you are submitting?  Please list any sources and how/why you used them.  Note that any code or bug-fixes directly used in your code should be well-commented *by you* to indicate your understanding.
+N/A
+

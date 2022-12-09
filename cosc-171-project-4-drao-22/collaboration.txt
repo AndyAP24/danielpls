@@ -1,0 +1,21 @@
+I got some help from TA Ahmed in his office hours on 11/10. He suggested using
+the PTE of a written-out page to save the backing storage block number to which
+it was written.
+
+I think I was able to implement swap_out() and swap_in() mostly correctly, as
+the example programs both run for a while before encountering an error and the
+debug output seems right, but there's a bug that's eluding me. Both example
+programs eventually fail because the `assert(end <= real_limit)` in
+vmsim_read_real() fails. One commonality is that the failure occurs when that
+function gets called from bs_write() in swap_out() when swap_out() gets called
+AFTER swap_in(). I can't figure out what is causing this issue. The programs
+fail with different numbers of backing storage blocks used depending on which
+program and the parameters with which it's called, so I'm skeptical that the
+backing storage is actually overflowing (which is what I think this assert is
+supposed to prevent). If it were overflowing I would expect the assert to fail
+at the same backing store block number every time (i.e. the same amount of
+backing storage allocated).
+
+I also think something may be missing from my handling of non-dirty pages in
+swap_out() which I've documented more fully in the code there. I didn't get a
+chance to investigate this fully as I was caught up with the bug above.

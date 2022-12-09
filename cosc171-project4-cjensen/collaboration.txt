@@ -1,0 +1,6 @@
+During this project, I got help from Andy (the TA) and Professor Pentecost during office hours. Adam Rogers
+also helped toward the end with testing.
+
+I thought it was difficult to think about the clock_hand variable as an int at first, without thinking about
+the reverse_page_map as an array. It was a bit difficult to wrap my head around this project conceptually b/c
+it involved a clock, which is circular, whereas arrays are linear.

@@ -1,0 +1,15 @@
+(1) Who did you collaborate with or recieve help/insight from during this project, and how did they help?
+
+I checked my logic when writing pseudocode and application of logic when writing actual code with the TAs, mostly Daniel.
+
+(2) What went well for you in this project?
+
+Opposite from last time--while the logic was hard, the application of it wasn't too bad. I feel like once I understood what was asked of me and how to do it, I could translate from pseudocode to actual code pretty readily.
+
+(3) What was challenging for you in this project?
+
+Logic for sure. This was a tough lab to have the scaffolding removed on. 
+
+(4) Did you consult any online sources in developing the code you are submitting?  Please list any sources and how/why you used them.  Note that any code or bug-fixes directly used in your code should be well-commented *by you* to indicate your understanding.
+
+Just previous code I've written and code from this lab.
