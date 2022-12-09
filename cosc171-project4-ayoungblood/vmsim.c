@@ -149,6 +149,8 @@ swap_out () {
 
   // COMPLETE ME:  Select a real page to swap out to the backing store, and then return the base address of that real page.
 
+
+  // DANIEL: no return statement! 
 	while(true){
 		vmsim_addr_t pte_addr = reverse_page_map[clock_hand];
 		vmsim_addr_t pte;
@@ -164,6 +166,8 @@ swap_out () {
 			real_page_addr = GET_PAGE_ADDR(pte);
 			bs_free_block++;
 			pte = block_number << 1;
+      //DANIEL: added my own return
+      return real_page_addr;
 		}
 	}
 	clock_hand++;
