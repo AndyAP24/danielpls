@@ -1,0 +1,21 @@
+(1) Who did you collaborate with or recieve help/insight from during this project, and how did they help?
+ 
+The TAs on Tuesday and Thursday were really helpful. 
+
+(2) What went well for you in this project?
+
+Following the progression of a page fault was the comprehensible part for me. Also, I learned a lot from looking at the manipulation of the resident, the reference and the  dirty bit at various step of the way. 
+
+(3) What was challenging for you in this project?
+
+Understanding the process of memory retrieval from the backing store took me quite some time. I douldn't figure out, on my own, how it was possible for it to happen considering that we weren't consistently writing to the disk. I had thought about the backing store as functioning like a disk, each time something is written to real memory, it should also be writtent to the backing store. 
+
+ I found out that although I could access the lower page table entry corresponding to the address of the victim page, I couldn’t access the lower_pte which didn’t have any corresponding page in real memory. Without it, I was unable to specify which block section in the bs I wanted to load data from. 
+
+
+Also, I ran into a segmentation fault that I could not resolve. I believe that it's due to the fact that I was not able to write in the lower_pte
+the specific section of the bs swap_in should read from. 
+
+(4) Did you consult any online sources in developing the code you are submitting?  Please list any sources and how/why you used them.  Note that any code or bug-fixes directly used in your code should be well-commented *by you* to indicate your understanding.
+
+For the page replacement policy, I made use of https://courses.cs.washington.edu/courses/cse451/99wi/Lectures/8-vm/tsld009.htm. 
