@@ -151,16 +151,17 @@ swap_out () {
   while(true) {
 	if(clock_hand == normal_real_pages) clock_hand = 0;
 	vmsim_addr_t addr = reverse_page_map[clock_hand];
-	if(!IS_REFERENCED(addr)) {
+	if(!IS_REFERENCED(addr)) { // DANIEL: check referenced in PTE, addr is pointer to PTE
 		vmsim_addr_t lpt;
 		vmsim_read_real(&lpt, addr, sizeof(lpt));
 		real_page_addr = GET_PAGE_ADDR(lpt);
 		bs_write(real_page_addr, bs_free_block);
 		SET_RESIDENT(lpt);
-		vmsim_write_real(&real_page_addr, lpt, sizeof(real_page_addr));
+		vmsim_write_real(&real_page_addr, lpt, sizeof(real_page_addr)); 
 		return real_page_addr;
+    // DANIEL: forgot to increment free block in backing store
 	}
-	CLEAR_REFERENCED(reverse_page_map[clock_hand]);
+	CLEAR_REFERENCED(reverse_page_map[clock_hand]); // DANIEL: clear referenced does nothing; not using write real
 	clock_hand++;
   }
 
