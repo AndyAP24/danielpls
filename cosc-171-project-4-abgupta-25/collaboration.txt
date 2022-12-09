@@ -1,0 +1,26 @@
+[This is a template for your project collaboration document.  Please briefly answer the following questions in whatever format you'd lik. Try to stay within 500 words unless there is an issue/bug requiring additional explanation.]
+
+(1) Who did you collaborate with or recieve help/insight from during this project, and how did they help?
+
+Aside from discussing the conceptual basis of the project with various peers, I spent quite some time looking back at slides, notes, and the textbook.
+
+
+
+(2) What went well for you in this project?
+
+I think something that went well for me in the project was looking at the code and macros provided and being able to actually write the code using them with a good understanding early on.
+
+
+
+(3) What was challenging for you in this project?
+
+The challenge in this project came early on for me. It was mainly in terms of conceptually understanding what I needed to do and how I would implement that in C code. The way I addressed this challenge was by spending lot of time jotting down pseudo code and basic structure on a piece of paper and understanding what I needed to do. That way when I was writing my code, I was able to do it fairly simply without many bugs because I had figured out what I needed beforehand.
+
+
+
+(4) Did you consult any online sources in developing the code you are submitting?  Please list any sources and how/why you used them.  Note that any code or bug-fixes directly used in your code should be well-commented *by you* to indicate your understanding.
+
+Aside from textbook and lecture notes, I did not use any other online sources.
+
+
+
